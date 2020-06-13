@@ -52,7 +52,9 @@ public class HomeController extends HttpServlet {
 		case "configuracion":
 			request.getRequestDispatcher("configuracion.jsp").forward(request, response);
 			break;
-
+		case "cerrarsecion":
+			request.getRequestDispatcher("index.html").forward(request, response);
+			break;
 		default:
 			break;
 		}

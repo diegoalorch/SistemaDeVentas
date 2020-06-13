@@ -12,12 +12,12 @@
 		<label style="margin-top: 5px"><i class="fas fa-user-tie"></i>  Nick</label> 
 		<h2 style="margin-top: 12px">Nueva Compra</h2>
 		<hr>
-		<label>Fecha:<br><input type="date" class="form-control"></label>
-		<label>Proveedor(es):<br><input type="text" class="form-control"></label>
-		<label>Codigo De Barra:<br><input type="text" class="form-control"></label><br><br>
-		<label>Descripción<br><input type="text" class="form-control"></label>
-		<label>Presentación<br><input type="text" class="form-control"></label>
-		<label>Precio<br><input type="text" class="form-control"></label>
+		<label>Fecha:<br><input type="date" class="form-control" id="fecha"></label>
+		<label>Proveedor(es):<br><input type="text" class="form-control" id="proveedor"></label>
+		<label>Codigo De Barra:<br><input type="text" class="form-control" id="producto"></label><br><br>
+		<label>Descripción<br><input type="text" class="form-control" id="descripcion"></label>
+		<label>Presentación<br><input type="text" class="form-control" id="presentacion2"></label>
+		<label>Precio<br><input type="text" class="form-control" id="precio"></label>
 		<div class="card" style="width: 350px; height: 190px; float: right; margin-right: -150px; margin-top: -90px">
 			<div class="card-header">
 				Tipo De Documento
@@ -33,12 +33,12 @@
 			
 		</div>
 		<div style=" float:left; margin-left: 388px; margin-top: 50px">
-			<button class="btn btn-primary"><i class="fas fa-shopping-bag"></i>   Nuevo</button>
-			<button class="btn btn-success"><i class="fas fa-shopping-cart"></i>   Agregar</button>
-			<button class="btn btn-dark"><i class="fas fa-cash-register"></i>   Registrar</button>
+			<button class="btn btn-primary" id="new"><i class="fas fa-shopping-bag"></i>   Nuevo</button>
+			<button class="btn btn-success" id="add"><i class="fas fa-shopping-cart"></i>   Agregar</button>
+			<button class="btn btn-dark" id="register"><i class="fas fa-cash-register"></i>   Registrar</button>
 		</div>
 		<div style="margin-top: 110px">
-			<table class="table table-hover">
+			<table class="table table-hover" id="aumentartabla">
 			  <thead class="thead-light">
 			    <tr>
 			      <th scope="col">Item</th>
@@ -51,85 +51,22 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			    <tr>
-			      <th scope="row">1</th>
-			      <td>Mark</td>
-			      <td>Otto</td>
-			      <td>@mdo</td>
-			      <td>asd</td>
-			      <td>a12esd</td>
-			      <td>bfgnasd</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">2</th>
-			      <td>Jacob</td>
-			      <td>Thornton</td>
-			      <td>@fat</td>
-			      <td>asd</td>
-			      <td>a12esd</td>
-			      <td>bfgnasd</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>@twitter</td>
-			      <td>asd</td>
-			      <td>a12esd</td>
-			      <td>bfgnasd</td>
-			      <td>asd</td>
-			      <td>asd</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>@twitter</td>
-			      <td>asd</td>
-			      <td>a12esd</td>
-			      <td>bfgnasd</td>
-			      <td>asd</td>
-			      <td>asd</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>@twitter</td>
-			      <td>asd</td>
-			      <td>a12esd</td>
-			      <td>bfgnasd</td>
-			      <td>asd</td>
-			      <td>asd</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>@twitter</td>
-			      <td>asd</td>
-			      <td>a12esd</td>
-			      <td>bfgnasd</td>
-			      <td>asd</td>
-			      <td>asd</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>@twitter</td>
-			      <td>asd</td>
-			      <td>a12esd</td>
-			      <td>bfgnasd</td>
-			      <td>asd</td>
-			      <td>asd</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>@twitter</td>
-			      <td>asd</td>
-			      <td>a12esd</td>
-			      <td>bfgnasd</td>
-			      <td>asd</td>
-			      <td>asd</td>
-			    </tr>
 			  </tbody>
 			</table>
+		</div>
+		<div class="card" style="width: 18rem; margin-left: 650px">
+		  <ul class="list-group list-group-flush">
+		    <li class="list-group-item">Subtotal</li>
+		    <li class="list-group-item">IGV</li>
+		    <li class="list-group-item"><h2>TOTAL: </h2></li>
+		  </ul>
 		</div>
 		<div>
 		</div>
 	</div>
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js">></script>
+	<script src="recursos/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="recursos/js/home.js"></script>
+	<script src="recursos/js/compra.js"></script>
 </body>
 </html>

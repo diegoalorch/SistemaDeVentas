@@ -52,6 +52,7 @@ public class ProductoDaoImp implements ProductoDao {
 		try {
 			con = Conexion.getConex();
 			ps = con.prepareStatement("select *from producto where codigo = ?;");
+			ps.setInt(1, idproducto);
 			r = ps.executeQuery();
 			while (r.next()) {
 				producto.setDescripcion(r.getString("descripcion"));
@@ -63,7 +64,7 @@ public class ProductoDaoImp implements ProductoDao {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		return null;
+		return producto;
 	}
 
 }

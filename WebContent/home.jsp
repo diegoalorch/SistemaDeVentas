@@ -20,11 +20,11 @@
             <li><a href="hc?action=reportes" target = "mostrar"><i class="far fa-chart-bar"></i>   Reportes</a></li>
             <li><a href="hc?action=backup" target = "mostrar"><i class="fas fa-database"></i>Backup</a></li>
             <li><a href="hc?action=configuracion" target = "mostrar"><i class="fas fa-tools"></i>Configuración</a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i>Cerrar Seción</a></li>
+            <li><a href="hc?action=cerrarsecion"><i class="fas fa-sign-out-alt"></i>Cerrar Seción</a></li>
         </ul> 
         <div class="social_media">
           <a href="https://www.facebook.com/diego.joel.Alor"><i class="fab fa-facebook-f" ></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/diegoalorch"><i class="fab fa-github"></i></a>
           <a href="https://www.instagram.com/diego_joel_alor/"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
@@ -32,7 +32,8 @@
         <iframe style="width: 100%; height: 100%; border: none;" name="mostrar"></iframe>
     </div>
 </div>
-    <script type="recursos/js/main.js"></script>
+	<script src="recursos/js/home.js"></script>
+    <script src="recursos/js/main.js"></script>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </body>
 </html>

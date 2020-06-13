@@ -17,7 +17,8 @@ public class test {
 		
 		//System.out.println(login());
 		//createuser();
-		createProducto();
+		//createProducto();
+		//select();
 		
 	}
 	
@@ -45,9 +46,18 @@ public class test {
 	static void createProducto() {
 		
 		int x;
-		x = productoDao.createProducto(new Producto("Queso", "kg", 100.00, 5, "1"));
+		x = productoDao.createProducto(new Producto("Lechita", "Lt", 5.25, 15, "2"));
 		if (x > 0) {
 			System.out.println("Producto Creado");
+		}
+	}
+	
+	static void select() {
+		Producto producto = productoDao.buscar(0);
+		if (productoDao.buscar(1)!=null) {
+			System.out.println("Funco");
+		}else {
+			System.out.println("No Funco");
 		}
 	}
 }
